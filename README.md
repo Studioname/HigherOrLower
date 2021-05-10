@@ -22,3 +22,5 @@ and I know I could have done better, but I wanted it to be at least functional b
 sleep without getting it to a working state because I knew I was close. So here it is. It works, but a few things stand out to me which could do with a little tweak.
 
 Edit: Made things look a bit better
+
+Edit#2: Removed placeholder value and second list pop on successful guess
