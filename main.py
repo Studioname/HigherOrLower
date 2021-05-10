@@ -32,13 +32,16 @@ def increment_score(old_score):
 def guess():
   running = True
   while running == True:
-    print(logo + "\n")
+
+    print(logo)
+    global score
+    print(f"Your score is {score}.")
     options_to_sorter()
     get_string(1)
     print(vs + "\n")
     get_string(2)
 
-    guess_number = int(input("Which option has more Social Media followers, 1 or 2? Type 1 or 2 to continue.\n"))
+    guess_number = int(input("Which option has more Social Media followers, 1 or 2? Type 1 or 2 to continue."))
   
     if guess_number == 1:
       other_number = 2
@@ -49,13 +52,12 @@ def guess():
 
     if player_guess_followers > other_number_followers:
       print(f"Well done! {sorter[guess_number - 1]['name']} has {player_guess_followers - other_number_followers} million more followers.")
-      global score
       score = increment_score(score)
       sorter.pop()
       sorter.pop()
       clear()
     else:
-      print(f"Unlucky! {sorter[other_number - 1]['name']} had {other_number_followers - player_guess_followers} million more followers than {sorter[0]['name']}. Your final score was {score}.")
+      print(f"Unlucky! {sorter[other_number - 1]['name']} had {other_number_followers - player_guess_followers} million more followers than {sorter[0]['name']}.")
       running = False
     
 def game():
