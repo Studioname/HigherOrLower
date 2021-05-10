@@ -21,7 +21,7 @@ def options_to_sorter():
   if not sorter:
     sorter.append(data.pop())
   sorter.append(data.pop())
-  sorter.append("placeholder")
+
 
 def get_string(no):
   print(f"{no}. {sorter[no-1]['name']}, a {sorter[no-1]['description']} from {sorter[no-1]['country']}")
@@ -53,7 +53,6 @@ def guess():
     if player_guess_followers > other_number_followers:
       print(f"Well done! {sorter[guess_number - 1]['name']} has {player_guess_followers - other_number_followers} million more followers.")
       score = increment_score(score)
-      sorter.pop()
       sorter.pop()
       clear()
     else:
