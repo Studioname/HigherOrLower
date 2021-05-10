@@ -20,3 +20,5 @@ subtract one from it and use that as an index for sorter? So that was what I end
 third entry to sorter ["placeholder"]. I had difficulty removing stuff from the list [don't ask me why] so before looping round I just use pop twice. It's sloppy,
 and I know I could have done better, but I wanted it to be at least functional before I went to sleep. I spent 3 hours on it without realising, but didn't want to
 sleep without getting it to a working state because I knew I was close. So here it is. It works, but a few things stand out to me which could do with a little tweak.
+
+Edit: Made things look a bit better
